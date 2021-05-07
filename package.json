@@ -10,6 +10,7 @@
   "author": "larry",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "firebase": "^8.5.0"
   }

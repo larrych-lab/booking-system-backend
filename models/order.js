@@ -1,7 +1,10 @@
 import db from "../firebase/index.js"
 
-const getMenuData =  db.collection("menu").get().then((menuData) => {
-    return menuData;
+let data = [];
+const getMenuData =  db.collection("menu").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        data.push(doc.data());
+    });
 });
 
-export default getMenuData;
+export default data;
