@@ -4,7 +4,6 @@ import updateController from "../controllers/update_controller.js";
 import deleteController from "../controllers/delete_controller.js";
 
 
-
 const port = 3000;
 const routers = (app)=> {
     app.get('/api/v1/home', homeController);
