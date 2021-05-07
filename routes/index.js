@@ -3,8 +3,6 @@ import createController from "../controllers/create_controller.js";
 import updateController from "../controllers/update_controller.js";
 import deleteController from "../controllers/delete_controller.js";
 
-
-
 const port = 3000;
 const routers = (app)=> {
     app.get('/api/v1/home', homeController);
@@ -14,7 +12,7 @@ const routers = (app)=> {
 
     app.listen(port, () => {
         console.log(`Example app listening at http://localhost:${port}`)
-      })
+    })
 }
 
 export default routers;

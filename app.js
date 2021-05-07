@@ -1,11 +1,7 @@
-const express = require('express')
-const app = express()
-const port = 3000
+import Routers  from "./routes/index.js";
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+import express from "express"
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+const app = express();
+
+Routers(app);
